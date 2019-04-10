@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font-family xmlns:android="http://schemas.android.com/apk/res/android">
+        <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/open_sans_l" />
+        <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/open_sans_reg" />
+    </font-family>
+
+
+</font-family>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/home_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport"
+            android:textSize="20sp" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrolling_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/view_height_with_padding"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/description_loader_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.loadingview.LoadingView
+                        android:id="@+id/description_loader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lv_duration="25"
+                        app:lv_end_color="@color/blue"
+                        app:lv_external_radius="15dp"
+                        app:lv_internal_radius="2dp"
+                        app:lv_start_color="@color/grey" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/description_img"
+                    android:layout_width="300dp"
+                    android:transitionName="description"
+                    android:scaleType="centerCrop"
+                    android:layout_height="300dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/liner_add_pin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/butt_shape"
+                        android:gravity="center"
+                        android:text="@string/add_top"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:background="@drawable/butt_shape"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/description_web_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_reg"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/description_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:text="\asdasdasdasd"
+                android:textColor="@color/grey_dark"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

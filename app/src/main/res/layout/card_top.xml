@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_card"
+    android:layout_width="130dp"
+    android:layout_height="170dp"
+    android:background="@color/black"
+    android:layout_marginRight="10dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/top_delete_liner"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:gravity="end"
+    android:paddingRight="5dp"
+    android:layout_gravity="end">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_close"/>
+
+</LinearLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_reg"
+            android:text="Sport"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_loader_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.github.loadingview.LoadingView
+                    android:id="@+id/top_loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:lv_duration="25"
+                    app:lv_end_color="@color/blue"
+                    app:lv_external_radius="15dp"
+                    app:lv_internal_radius="2dp"
+                    app:lv_start_color="@color/grey" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/top_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:transitionName="description"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/top_web_title"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+android:paddingLeft="3dp"            android:text="sdzfsdzfsdfsdfdszf"
+            android:textColor="@color/grey"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">News Feed</string>
+
+
+    <string name="news_feed">News Feed</string>
+    <string name="my_news">My News</string>
+    <string name="Save">Save</string>
+    <string name="add_top">Add Top</string>
+    <string name="no_internet">No Internet</string>
+    <string name="reload">Reload</string>
+</resources>

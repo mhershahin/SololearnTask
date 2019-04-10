@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:gravity="center">
+    <LinearLayout
+        android:paddingBottom="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="40dp"
+            />
+
+        <com.github.loadingview.LoadingView
+            android:id="@+id/splash_loader"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            app:lv_duration="30"
+            app:lv_end_color="@color/blue"
+            app:lv_external_radius="20dp"
+            app:lv_internal_radius="3dp"
+            app:lv_start_color="@color/grey" />
+    </LinearLayout>
+
+</RelativeLayout>

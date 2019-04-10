@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/own_news_card"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/own_news_loader_layout"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.github.loadingview.LoadingView
+                    android:id="@+id/own_news_loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:lv_duration="25"
+                    app:lv_end_color="@color/blue"
+                    app:lv_external_radius="15dp"
+                    app:lv_internal_radius="2dp"
+                    app:lv_start_color="@color/grey" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/own_news_img"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:transitionName="description"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/own_news_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/own_delete_liner"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_close" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/own_news_web_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:text="Serj Sargsyan"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
